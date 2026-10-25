@@ -70,10 +70,13 @@ main { padding: 28px 32px 80px; max-width: 920px; width: 100%; min-width: 0; }
 .strip img { display: block; width: 200px; height: 112px; object-fit: cover; }
 .strip .cap { font-size: 11px; color: #555; padding: 2px 6px; text-align: left; background: #fff; }
 
-.vids { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.vids a { display: flex; gap: 10px; align-items: center; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--ink); }
-.vids a:hover { border-color: var(--accent); background: var(--accent-soft); }
-.vids .play { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--bad); color: var(--panel); display: grid; place-items: center; font-size: 11px; }
+.vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.vids figure { margin: 0; min-width: 0; }
+.vframe { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; overflow: hidden; background: var(--panel-2); }
+.vframe iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.vids figcaption { margin-top: 6px; font-size: 14px; }
+.vids figcaption a { color: var(--ink); text-decoration: none; }
+.vids figcaption a:hover { color: var(--accent); text-decoration: underline; }
 .qtools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .btn { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 6px 12px; font-size: 14px; }
 .btn:hover { background: var(--panel-2); }
@@ -369,7 +372,7 @@ function renderSection(sec) {
     <div class="crumb">${LEC_NAMES[sec.lec.id]} · ${esc(sec.lec.title)}</div>
     <h2 class="page-h">${esc(sec.id)} ${esc(sec.title)}</h2>
     <div class="card"><h3>Key points</h3><ul class="notes">${sec.notes.map(n => `<li>${fmt(n)}</li>`).join("")}</ul></div>
-    ${(window.VIDEOS || {})[sec.key] ? `<div class="card"><h3>Videos <span class="grow"></span><span class="score">The Organic Chemistry Tutor</span></h3><ul class="vids">${window.VIDEOS[sec.key].map(([id, t]) => `<li><a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener"><span class="play" aria-hidden="true">▶</span>${esc(t)}</a></li>`).join("")}</ul></div>` : ""}
+    ${(window.VIDEOS || {})[sec.key] ? `<div class="card"><h3>Videos <span class="grow"></span><span class="score">The Organic Chemistry Tutor</span></h3><div class="vids">${window.VIDEOS[sec.key].map(([id, t]) => `<figure><div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(t)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div><figcaption><a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">${esc(t)} ↗</a></figcaption></figure>`).join("")}</div></div>` : ""}
     <div class="card"><h3>Slides <span class="grow"></span><span class="score">${sec.figs.length} figures</span></h3><div class="strip">${thumbs}</div></div>
     <div class="card" id="quizCard"><h3>Quiz <span class="grow"></span><span class="score" id="secScore"></span></h3>
       <div class="bar" style="margin-bottom:10px"><i id="secBar"></i></div>
