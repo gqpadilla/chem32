@@ -809,3 +809,19 @@ window.COURSE = [
   ]
 }
 ];
+
+// Supplementary videos (The Organic Chemistry Tutor), keyed by section: [YouTube id, title]
+window.VIDEOS = {
+  "L2/2.0–2.1": [["Vqx9a2aU99c", "Valence Bond Theory & Hybrid Atomic Orbitals"]],
+  "L2/2.2": [["S_k0kr2eZSQ", "Introduction to Ionic Bonding and Covalent Bonding"], ["8NQzcpWvq4g", "Ionic Bonds, Polar Covalent Bonds, and Nonpolar Covalent Bonds"]],
+  "L2/2.3–2.4": [["6unef5Hz6SU", "Organic Chemistry – How To Draw Lewis Structures"], ["PeY_sihSh8E", "Lewis Structures, Formal Charge, Molecular Geometry, Resonance, Polar or Nonpolar"]],
+  "L2/2.5": [["ds5HXmBkO0Y", "Bond Polarity, Electronegativity and Dipole Moment – Practice Problems"], ["8NQzcpWvq4g", "Ionic Bonds, Polar Covalent Bonds, and Nonpolar Covalent Bonds"]],
+  "L2/2.6": [["R_SIjijCouE", "How To Calculate The Formal Charge of an Atom"]],
+  "L2/2.7": [["klAT2MACt4Q", "Major Resonance Contributor and Resonance Hybrid"]],
+  "L2/2.8": [["pdJeQUd2g_4", "Hybridization of Atomic Orbitals – Sigma & Pi Bonds – sp, sp², sp³"], ["Vqx9a2aU99c", "Valence Bond Theory & Hybrid Atomic Orbitals"]],
+  "L2/2.9": [["cL6eNyYls5M", "Bond Line Formulas, Lewis Structures, Kekulé & Condensed Structures"]],
+  "L2/2.10": [["Tj7mXcWkrTE", "Drawing Constitutional Isomers of Alkanes"]],
+  "L2/2.11": [["_Cw0_cJzkSI", "Molecular Geometry & VSEPR Theory – Basic Introduction"]],
+  "L2/2.12": [["bFAU1GMJmnI", "Dipole Moment, Vectors, & Electronegativity"], ["l1GgVwqiufE", "Dipole Moment, Molecular Polarity & Percent Ionic Character"]],
+  "L2/2.13": [["owVZiKnnPME", "Acids and Bases – Basic Introduction"], ["OP6RKqSp1Xw", "Conjugate Acid–Base Pairs, Arrhenius, Brønsted–Lowry and Lewis"], ["L7flgA0n_tc", "pKa Values of Acids"]]
+};
