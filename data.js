@@ -825,3 +825,43 @@ window.VIDEOS = {
   "L2/2.12": [["bFAU1GMJmnI", "Dipole Moment, Vectors, & Electronegativity"], ["l1GgVwqiufE", "Dipole Moment, Molecular Polarity & Percent Ionic Character"]],
   "L2/2.13": [["owVZiKnnPME", "Acids and Bases – Basic Introduction"], ["OP6RKqSp1Xw", "Conjugate Acid–Base Pairs, Arrhenius, Brønsted–Lowry and Lewis"], ["L7flgA0n_tc", "pKa Values of Acids"]]
 };
+
+// Lectures 1, 3 and 4 (The Organic Chemistry Tutor)
+(function () {
+  const V = {
+    macro: ["Y3h2GNajvcY", "Macromolecules Review"],
+    lipids: ["7dmoH5dAvpY", "Lipids – Fatty Acids, Triglycerides, Phospholipids, Terpenes, Waxes"],
+    intro: ["B_ketdzJtY8", "Organic Chemistry – Basic Introduction"],
+    hydro: ["z5hQ8iZZ8dU", "Hydrocarbons – Aliphatic vs Aromatic, Saturated & Unsaturated"],
+    stereo: ["XftIUcLWTEE", "Stereoisomers, Enantiomers, Meso Compounds, Diastereomers, Cis & Trans"],
+    consti: ["Tj7mXcWkrTE", "Drawing Constitutional Isomers of Alkanes"],
+    fg: ["m9jM8lWxrAE", "Functional Groups"],
+    fgprop: ["g8fDLzySfog", "Properties of Functional Groups"],
+    iupac: ["TYU_JluleME", "IUPAC Nomenclature of Alkanes – Naming Organic Compounds"],
+    cyclo: ["vSxZm_91GT0", "Naming Cycloalkanes With Substituents, Cis & Trans, Bicyclo Alkanes"],
+    phys: ["F2x8wMWPpec", "Physical Properties of Alkanes – Melting Point, Boiling Point, Density"],
+    strain: ["b0QJdfJku9w", "Stability of Cycloalkanes – Angle Strain"],
+    newman: ["_CCHTptAhLQ", "Newman Projections"],
+    chair: ["RXU_32X1oFI", "Chair Conformation and Ring Flips"],
+    alkene: ["RgbQya8HXBM", "Naming Alkenes, IUPAC Practice, E Z System, Cycloalkenes"],
+    ez: ["frtnEDTSzi8", "Naming Alkenes Using E Z System"],
+    dehyd: ["EnviDtnyyug", "Alcohol Dehydration Reaction Mechanism With H2SO4"],
+    h2: ["iUIzpEEpW_Q", "Catalytic Hydrogenation of Alkenes"],
+    mark: ["6O-xSRC5Wg8", "Markovnikov's Rule"],
+    hx: ["ERGB9dNi7-0", "Hydrohalogenation – Alkene Reaction Mechanism"],
+    roor: ["ZMcCvD5dDMU", "Alkene + HBr + ROOR – Reaction Mechanism"],
+    hydra: ["XqCPXIvMvB4", "Hydration of Alkenes Reaction Mechanism"],
+    halo: ["ZfOcYntQmlk", "Halogenation of Alkenes & Halohydrin Formation"],
+    alkyne: ["ouDS2tZU94g", "Naming Alkynes – IUPAC Nomenclature & Common Names"],
+    alkrx: ["p6TLF92lyuI", "Alkyne Reactions"]
+  };
+  Object.assign(window.VIDEOS, {
+    "L1/1.1": [V.macro, V.lipids], "L1/1.2": [V.intro], "L1/1.3": [V.intro], "L1/1.4": [V.hydro], "L1/1.5": [V.hydro],
+    "L1/1.6": [V.stereo, V.consti], "L1/1.7": [V.fg, V.fgprop],
+    "L3/3.1": [V.hydro, V.fg], "L3/3.2": [V.consti], "L3/3.3": [V.iupac], "L3/3.4": [V.iupac], "L3/3.5": [V.cyclo],
+    "L3/3.6": [V.phys], "L3/3.7": [V.phys, V.strain], "L3/3.8": [V.newman], "L3/3.9": [V.chair], "L3/3.10": [V.strain],
+    "L3/3.11": [V.stereo, V.cyclo],
+    "L4/4.1": [V.alkene], "L4/4.2": [V.ez, V.alkene], "L4/4.3": [V.dehyd], "L4/4.4": [V.h2], "L4/4.5": [V.mark, V.hx, V.roor],
+    "L4/4.6": [V.hydra, V.halo], "L4/4.7": [V.alkyne], "L4/4.8": [V.alkrx], "L4/4.9": [V.alkrx]
+  });
+})();
