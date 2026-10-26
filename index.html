@@ -161,7 +161,7 @@ main { padding: 28px 32px 80px; max-width: 920px; width: 100%; min-width: 0; }
 <script src="data.js"></script>
 <script>
 const C = window.COURSE;
-const LEC_NAMES = { L1: "Lecture 1", L2: "Lecture 2", L3: "Lecture 3", L4: "Lecture 4", CW: "Classwork 1" };
+const LEC_NAMES = { L1: "Lecture 1", L2: "Lecture 2", L3: "Lecture 3", L4: "Lecture 4", EX: "Classwork", CW: "Classwork 1" };
 
 // ---------- helpers ----------
 const $ = (s, el = document) => el.querySelector(s);
@@ -189,9 +189,9 @@ C.forEach(lec => lec.sections.forEach(sec => {
   sec.lec = lec;
   sec.key = lec.id + "/" + sec.id;
   sec.quiz.forEach((q, i) => { q.id = sec.key + "#" + i; q.sec = sec; });
-  const [L, a, b] = sec.slides;
+  const [L, a, b] = sec.slides || [];
   sec.figs = [];
-  for (let i = a; i <= b; i++) sec.figs.push(`${L}-${pad(i)}`);
+  if (L) for (let i = a; i <= b; i++) sec.figs.push(`${L}-${pad(i)}`);
   (sec.more || []).forEach(([L2, a2, b2]) => { for (let i = a2; i <= b2; i++) sec.figs.push(`${L2}-${pad(i)}`); });
   (sec.extra || []).forEach(e => sec.figs.push(e));
   SECTIONS.push(sec);
@@ -373,7 +373,7 @@ function renderSection(sec) {
     <h2 class="page-h">${esc(sec.id)} ${esc(sec.title)}</h2>
     <div class="card"><h3>Key points</h3><ul class="notes">${sec.notes.map(n => `<li>${fmt(n)}</li>`).join("")}</ul></div>
     ${(window.VIDEOS || {})[sec.key] ? `<div class="card"><h3>Videos <span class="grow"></span><span class="score">The Organic Chemistry Tutor</span></h3><div class="vids">${window.VIDEOS[sec.key].map(([id, t]) => `<figure><div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(t)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div><figcaption><a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">${esc(t)} ↗</a></figcaption></figure>`).join("")}</div></div>` : ""}
-    <div class="card"><h3>Slides <span class="grow"></span><span class="score">${sec.figs.length} figures</span></h3><div class="strip">${thumbs}</div></div>
+    ${sec.figs.length ? `<div class="card"><h3>Slides <span class="grow"></span><span class="score">${sec.figs.length} figures</span></h3><div class="strip">${thumbs}</div></div>` : ""}
     <div class="card" id="quizCard"><h3>Quiz <span class="grow"></span><span class="score" id="secScore"></span></h3>
       <div class="bar" style="margin-bottom:10px"><i id="secBar"></i></div>
       <div class="qtools" style="margin-bottom:6px">

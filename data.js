@@ -807,6 +807,74 @@ window.COURSE = [
     ]
   }
   ]
+},
+{
+  id: "EX", title: "Exams", sub: "Past classwork quizzes: chemical bonding, conformational analysis",
+  sections: [
+  {
+    id: "CW2", title: "Chemical Bonding",
+    notes: [
+      "Graded Google Forms classwork, 25 items × 4 points. Covers Lecture 2 (Chemical Bonding).",
+      "Topics: carbon's bonding, ionic character, Lewis structures and formal charge, octet exceptions, resonance, polarity and dipole moments, hybridization and VSEPR shapes, isomers vs resonance, boiling points, conjugate acid–base pairs."
+    ],
+    quiz: [
+      { q: "Which statement best explains why carbon is capable of forming such a large number of different compounds?", c: ["Carbon can form four covalent bonds and strong C–C bonds.", "Carbon has six valence electrons and readily forms ionic bonds.", "Carbon has a completely filled valence shell.", "Carbon can form only single bonds with other carbon atoms."], x: "Carbon has 4 valence electrons, forms four covalent bonds and strong C–C bonds (chains, rings, multiple bonds)." },
+      { q: "Which statement correctly compares the 2s and 2p atomic orbitals of carbon?", c: ["The 2s orbital is lower in energy than the 2p orbitals in an isolated carbon atom.", "The 2s orbital has higher energy than the 2p orbitals.", "The 2s and 2p orbitals always have identical shapes.", "The 2s and 2p orbitals in carbon are fully filled."], x: "2s is spherical and lower in energy; 2p orbitals are dumbbell-shaped. Carbon's 2p holds only 2 electrons." },
+      { q: "Which compound would be expected to have the greatest ionic character?", c: ["K–Cl", "C–Cl", "H–Cl", "C–H"], x: "The largest electronegativity difference (K 0.8, Cl 3.0) gives the most ionic bond." },
+      { q: "Which Lewis structure for ~CO2~ satisfies the octet rule for all atoms and minimizes formal charges?", c: ["O=C=O", "O–C–O", "O≡C–O", "O–C≡O"], x: "Two C=O double bonds give every atom an octet and all formal charges of zero." },
+      { q: "Which species has an incomplete octet around its central atom?", c: ["~BF3~", "~CH4~", "~NH3~", "~H2O~"], x: "Boron in ~BF3~ has only 6 valence electrons (three bonds, no lone pair)." },
+      { q: "Which species has an expanded octet around its central atom?", c: ["~PCl5~", "~NH3~", "~BF3~", "~CO2~"], x: "P in ~PCl5~ has five bonds = 10 electrons; third-row elements can use d orbitals." },
+      { q: "Which species has resonance structures in which the equivalent bonds have the same average bond character?", c: ["~CO3^2-~", "~CH3CN~", "SCN⁻", "O=SFBr"], x: "The three C–O bonds in carbonate are equivalent (bond order 1⅓) in the resonance hybrid." },
+      { q: "In the nitrate ion, ~NO3^-~, the three N–O bonds are experimentally equivalent. Which explanation best accounts for this?", c: ["The actual structure is a resonance hybrid with equivalent N–O bonds.", "Nitrogen forms three identical double bonds.", "The ion rapidly switches between different Lewis structures.", "Nitrogen does not participate in bonding."], x: "Resonance structures do not interconvert; the real ion is a single hybrid." },
+      { q: "Which molecule has polar bonds but no net molecular dipole moment?", c: ["~SF6~", "H–C≡C–F", "~NH3~", "~SO2~"], x: "Octahedral ~SF6~ is symmetric, so the six S–F bond dipoles cancel." },
+      { q: "A carbon atom forms one double bond and two single bonds. Which hybridization and approximate geometry are expected?", c: ["sp²; trigonal planar", "sp; linear", "sp³; tetrahedral", "sp³d; trigonal bipyramidal"], x: "Three σ-bonding groups → sp², 120°, trigonal planar; the unhybridized p forms the π bond." },
+      { q: "Which statement correctly describes the bonding in ethyne, ~C2H2~?", c: ["Each carbon is sp hybridized and the C≡C bond contains one σ and two π bonds.", "Each carbon is sp³ hybridized and forms four σ bonds.", "Each carbon is sp² hybridized and forms one π bond.", "Each carbon is sp³ hybridized and the C≡C bond contains two σ bonds."], x: "A triple bond = 1 σ + 2 π; each C has two groups → sp, linear." },
+      { q: "Which molecule has a bent molecular geometry but a trigonal planar electron-group arrangement around its central atom?", c: ["~SO2~", "~BF3~", "~CO2~", "~BeCl2~"], x: "S has two bonding groups + one lone pair: trigonal planar electron groups, bent shape." },
+      { q: "Which species has a trigonal pyramidal molecular geometry (at one of its atoms)?", c: ["~CH3CH2NH2~", "~CH3CHO~", "~CH3CN~", "~CH3COOH~"], x: "The amine N has three bonds and one lone pair → trigonal pyramidal." },
+      { q: "Which of the following molecules has the largest net molecular dipole moment?", c: ["H–C≡C–F", "H–C≡C–H", "F–C≡C–F", "Cl–C≡C–Cl"], x: "The linear symmetric molecules have dipoles that cancel; only H–C≡C–F has a net dipole." },
+      { q: "Which pair represents constitutional isomers?", c: ["1-pentane and 3-pentane", "O=O–O and O–O=O", "~H2C=O~ and HCOOH", "propane and propene"], x: "The answer key treats the two pentane positions as different connectivity (same formula). The ozone pair is resonance; the others have different formulas." },
+      { q: "Which statement correctly distinguishes constitutional isomers from resonance structures?", c: ["Constitutional isomers have different atom connectivity, whereas resonance structures have the same connectivity but different electron arrangements.", "Constitutional isomers have different molecular formulas.", "Resonance structures represent different compounds that exist independently.", "Resonance structures always have different atom connectivity."], x: "Resonance moves only electrons; isomers are real, distinct compounds with different connectivity." },
+      { q: "Arrange in order of increasing boiling point: I. ~CH3CH2CH2OH~  II. ~CH3CH2CH3~  III. ~CH3CH2CH2CH3~  IV. ~CH3CH2CH2CH2OH~", c: ["II < III < I < IV", "III < II < I < IV", "II < I < III < IV", "III < II < IV < I"], x: "Alkanes (London forces only) boil lowest, larger ones higher; the alcohols H-bond, butanol above propanol." },
+      { q: "Which of the following pairs represents a conjugate acid–base pair?", c: ["~H2O~ and OH⁻", "HCl and NaOH", "~H2SO4~ and ~SO4^2-~", "~NH4^+~ and ~NH2^-~"], x: "A conjugate pair differs by exactly one H⁺. The others differ by two H⁺ or are unrelated." },
+      { q: "In H₂CO₃ + H₂O ⇌ HCO₃⁻ + H₃O⁺, which pairs are the conjugate acid–base pairs?", c: ["H₂CO₃/HCO₃⁻ and H₃O⁺/H₂O", "H₂CO₃/H₃O⁺ and H₂O/HCO₃⁻", "H₂CO₃/H₂O and HCO₃⁻/H₃O⁺", "HCO₃⁻/H₂O and H₂CO₃/H₃O⁺"], x: "H₂CO₃ loses H⁺ → HCO₃⁻; H₂O gains H⁺ → H₃O⁺." },
+      { q: "In ~CH2=CH–CH3~, what are the hybridizations of the three carbon atoms, respectively?", c: ["sp², sp², sp³", "sp³, sp³, sp³", "sp, sp², sp³", "sp², sp³, sp²"], x: "The two C=C carbons are sp²; the methyl carbon is sp³." },
+      { q: "For ~CH3^-~, what are the number of lone pairs, molecular geometry and approximate bond angle around carbon?", c: ["1 lone pair; trigonal pyramidal; ~107°", "0 lone pairs; trigonal planar; 120°", "1 lone pair; bent; ~104.5°", "2 lone pairs; linear; 180°"], x: "Three bonds + one lone pair (like ~NH3~) → trigonal pyramidal." },
+      { q: "How many σ and π bonds are present in ~CH3–C≡CH~?", c: ["6 σ and 2 π", "7 σ and 2 π", "7 σ and 1 π", "8 σ and 2 π"], x: "4 C–H σ + 2 C–C σ = 6 σ; the triple bond adds 2 π." },
+      { q: "When drawing resonance structures for ~CO3^2-~, what remains unchanged?", c: ["The positions of the three oxygen atoms", "The location of the C=O double bond", "The formal charge on each oxygen atom", "The number of electrons around carbon"], x: "Atoms never move between resonance structures; only electrons (and charges) do." },
+      { q: "Which correctly ranks the resonance structures of the acetate ion, ~CH3COO^-~?", c: ["The two resonance structures are equally important because they are equivalent and have the same formal charges.", "The structure with the negative charge on carbon is most important because carbon is less electronegative than oxygen.", "The structure with two single C–O bonds is most important because it minimizes the number of double bonds.", "The structure with two C–O bonds and each O with 1 unpaired electron is also a resonance structure."], x: "The two structures just swap which O carries the C=O and the −1 charge." },
+      { q: "In acetate, ~CH3–C(=O)–O^-~, what are the formal charges of the carbonyl O (=O) and the other O (–O)?", c: ["0 and −1", "−1 and 0", "0 and 0", "1 and −1"], x: "=O: 6 − 4 − 2 = 0. –O: 6 − 6 − 1 = −1." }
+    ]
+  },
+  {
+    id: "CW3", title: "Conformational Analysis",
+    notes: [
+      "Graded Google Forms classwork, 20 items × 5 points. Covers Lecture 3 conformations (3.8–3.10).",
+      "Topics: Newman, sawhorse and wedge–dash drawings; ethane and butane conformers and their energies; cyclohexane chair/boat, axial vs equatorial, ring flips and 1,3-diaxial interactions."
+    ],
+    quiz: [
+      { q: "When cyclohexane undergoes a ring flip, what happens?", c: ["Axial becomes equatorial and vice versa", "Chair becomes planar", "Bond lengths change", "Ring opens"], x: "A chair–chair interconversion swaps every axial position with an equatorial one." },
+      { q: "In the Newman projection of 2-methylbutane looking down the C2–C3 bond, the lowest-energy conformation occurs when:", c: ["The methyl group on C2 is anti to the methyl on C3", "The methyl group on C2 is gauche to the methyl on C3", "The methyl group on C2 eclipses a hydrogen", "The methyl group on C2 eclipses the methyl on C3"], x: "Staggered with the bulky groups 180° apart minimizes steric strain." },
+      { q: "During rotation about the C2–C3 bond of butane, how many energy maxima are observed in a full 360° rotation?", c: ["3", "1", "2", "6"], x: "Three eclipsed conformations: one totally eclipsed (CH₃/CH₃) and two CH₃/H eclipsed." },
+      { q: "The energy difference between chair and boat conformations of cyclohexane is approximately:", c: ["3–5 kcal/mol", "1 kcal/mol", "7–9 kcal/mol", "10–12 kcal/mol"], x: "Per the answer key, the boat lies about 3–5 kcal/mol (≈ 6.9 kcal/mol in many texts) above the chair." },
+      { q: "In the staggered conformation of ethane, the dihedral angle between two C–H bonds on adjacent carbons is __.", c: ["60°", "0°", "120°", "180°"], x: "Nearest front/back C–H bonds are 60° apart in a staggered conformation (0° when eclipsed)." },
+      { q: "Which statement about the boat conformation of cyclohexane is true?", c: ["It suffers from both torsional strain and flagpole interactions", "It has no torsional strain", "It is more stable than the chair due to hydrogen bonding", "It is the preferred conformation at room temperature"], x: "The boat has eclipsed C–H bonds and the two flagpole H's bump into each other." },
+      { q: "Which statement is TRUE for dash bonds?", c: ["They indicate bonds going behind the plane of the page", "They indicate bonds in the plane of the paper", "They indicate bonds coming out of the page", "They indicate resonance"], x: "Dashes point away from the viewer; wedges point toward the viewer." },
+      { q: "In a Newman projection, which represents a totally eclipsed conformation of butane?", c: ["~CH3~ groups 0° apart", "~CH3~ groups 180° apart", "~CH3~ groups 60° apart", "H atoms 120° apart"], x: "Totally eclipsed = the two methyls directly overlap (dihedral 0°), the highest-energy conformer." },
+      { q: "In a cyclohexane chair, axial hydrogens are:", c: ["Perpendicular to the plane of the ring", "In plane with the ring", "Always down", "Always up"], x: "Axial bonds are parallel to the ring axis, alternating up and down." },
+      { q: "Wedge and dash notation is particularly useful to:", c: ["Represent 3D molecular geometry", "Determine hybridization", "Count electrons", "Determine bond energies"], x: "Wedges and dashes show which bonds point toward or away from the viewer." },
+      { q: "Which conformation of ethane has the highest energy?", c: ["Eclipsed", "Anti", "Gauche", "Staggered"], x: "Eclipsed ethane has ~3 kcal/mol (12 kJ/mol) torsional strain. Anti/gauche apply to butane." },
+      { q: "Sawhorse projections are less common than Newman projections because:", c: ["They are harder to draw", "They do not show conformational details", "They cannot represent chirality", "They confuse functional groups"], x: "Both show the same conformational information; Newman projections are simply easier to draw." },
+      { q: "For monosubstituted cyclohexane, the equatorial position is preferred because:", c: ["It minimizes steric hindrance", "It maximizes bond strain", "It allows H-bonding", "It is closer to the center of the ring"], x: "An equatorial group avoids 1,3-diaxial interactions." },
+      { q: "Sawhorse projection is most useful for visualizing:", c: ["Conformational relationships along a C–C bond", "Bond lengths", "Resonance", "Hybridization"], x: "It views the C–C bond at an angle, showing the relative positions of the substituents." },
+      { q: "Which cyclohexane conformation is most stable?", c: ["Chair", "Boat", "Twist-boat", "Planar"], x: "The chair has ~109.5° angles and all bonds staggered: no angle or torsional strain." },
+      { q: "In wedge-and-dash representation, a solid wedge indicates:", c: ["A bond coming out of the plane toward the observer", "A bond in the plane of the paper", "A bond going behind the plane", "A double bond"], x: "Solid wedge = toward you; dashed wedge = away; plain line = in the plane." },
+      { q: "The energy difference between anti and gauche conformations in butane is approximately:", c: ["0.9 kcal/mol", "3.0 kcal/mol", "5.0 kcal/mol", "7.5 kcal/mol"], x: "Gauche butane is ~0.9 kcal/mol (3.8 kJ/mol) higher in energy due to CH₃/CH₃ steric strain." },
+      { q: "Which correctly converts a staggered Newman projection of ethane into a sawhorse projection?", c: ["Draw C–C bond diagonally with hydrogens staggered", "Draw C–C bond vertically with hydrogens eclipsed", "Draw all bonds in the plane", "Draw double bonds"], x: "A sawhorse shows the C–C bond diagonally, keeping the same (staggered) arrangement." },
+      { q: "In the Newman projection of butane looking down the C2–C3 bond, the anti conformation corresponds to:", c: ["Two methyl groups 180° apart", "Two methyl groups 60° apart", "Two methyl groups eclipsing", "One methyl group eclipsing a hydrogen"], x: "Anti = 180° (lowest energy); gauche = 60°." },
+      { q: "In cyclohexane, a 1,3-diaxial interaction refers to:", c: ["Steric strain between axial substituents and hydrogens on carbons 3 positions away", "Hydrogen bonding", "Bond angle strain", "Ring flipping"], x: "An axial group crowds the axial H's on C3 and C5 on the same face of the ring." }
+    ]
+  }
+  ]
 }
 ];
 
